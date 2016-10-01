@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "DotNetLerning\Hell
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP", "OOP", "{D17B6637-03F8-46C1-8447-E0E346DC8847}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleClassExample", "SimpleClassExample\SimpleClassExample.csproj", "{EBA04738-E420-4E2F-BD83-02E175DD0739}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +19,16 @@ Global
 		{01B072FC-90F0-4CF9-B78F-C295D1D20047}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01B072FC-90F0-4CF9-B78F-C295D1D20047}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01B072FC-90F0-4CF9-B78F-C295D1D20047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBA04738-E420-4E2F-BD83-02E175DD0739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA04738-E420-4E2F-BD83-02E175DD0739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA04738-E420-4E2F-BD83-02E175DD0739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA04738-E420-4E2F-BD83-02E175DD0739}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{01B072FC-90F0-4CF9-B78F-C295D1D20047} = {D17B6637-03F8-46C1-8447-E0E346DC8847}
+		{EBA04738-E420-4E2F-BD83-02E175DD0739} = {D17B6637-03F8-46C1-8447-E0E346DC8847}
 	EndGlobalSection
 EndGlobal
