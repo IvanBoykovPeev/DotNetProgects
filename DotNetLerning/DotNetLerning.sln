@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP", "OOP", "{D17B6637-03F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleClassExample", "SimpleClassExample\SimpleClassExample.csproj", "{EBA04738-E420-4E2F-BD83-02E175DD0739}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "delegate and event", "delegate and event", "{F19E2101-3683-4FA6-BCCA-C725B9D4D03A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleForDelegat", "ExampleForDelegat\ExampleForDelegat.csproj", "{17E962DA-26CA-4C6D-9BC9-DBDF5C760796}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,10 @@ Global
 		{EBA04738-E420-4E2F-BD83-02E175DD0739}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBA04738-E420-4E2F-BD83-02E175DD0739}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBA04738-E420-4E2F-BD83-02E175DD0739}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17E962DA-26CA-4C6D-9BC9-DBDF5C760796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E962DA-26CA-4C6D-9BC9-DBDF5C760796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E962DA-26CA-4C6D-9BC9-DBDF5C760796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17E962DA-26CA-4C6D-9BC9-DBDF5C760796}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +38,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{01B072FC-90F0-4CF9-B78F-C295D1D20047} = {D17B6637-03F8-46C1-8447-E0E346DC8847}
 		{EBA04738-E420-4E2F-BD83-02E175DD0739} = {D17B6637-03F8-46C1-8447-E0E346DC8847}
+		{17E962DA-26CA-4C6D-9BC9-DBDF5C760796} = {F19E2101-3683-4FA6-BCCA-C725B9D4D03A}
 	EndGlobalSection
 EndGlobal
