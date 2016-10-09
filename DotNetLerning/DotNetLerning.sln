@@ -31,7 +31,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserName", "UserName\UserNa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Months", "Months\Months.csproj", "{F8AEA1F6-6670-4AB3-852F-1AA2F185B3DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.GetMax", "2.GetMax\2.GetMax.csproj", "{18C2F2E6-4A41-461E-B9C6-636FB50C6FF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.2.Practice-GetMax", "2.GetMax\9.2.Practice-GetMax.csproj", "{18C2F2E6-4A41-461E-B9C6-636FB50C6FF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
