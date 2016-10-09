@@ -1,0 +1,5 @@
+C:\Users\Ivan\Desktop\DotNetGit\DotNetLerning\UserName\bin\Debug\UserName.exe.config
+C:\Users\Ivan\Desktop\DotNetGit\DotNetLerning\UserName\bin\Debug\UserName.exe
+C:\Users\Ivan\Desktop\DotNetGit\DotNetLerning\UserName\bin\Debug\UserName.pdb
+C:\Users\Ivan\Desktop\DotNetGit\DotNetLerning\UserName\obj\Debug\UserName.exe
+C:\Users\Ivan\Desktop\DotNetGit\DotNetLerning\UserName\obj\Debug\UserName.pdb
