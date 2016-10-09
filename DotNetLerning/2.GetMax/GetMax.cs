@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2.GetMax
+namespace GetMax
 {
     class GetMax
     {
-        static int GetMax(int firstNumber, int secondNumber)
+        static int GetMaxNumber(int firstNumber, int secondNumber)
         {
             int hightNumber = 0;
             if (firstNumber > secondNumber)
@@ -26,8 +26,8 @@ namespace _2.GetMax
             int first = int.Parse(Console.ReadLine());            
             int second = int.Parse(Console.ReadLine());            
             int thirt = int.Parse(Console.ReadLine());
-            first = GetMax(first, second);
-            first = GetMax(first, thirt);
+            first = GetMaxNumber(first, second);
+            first = GetMaxNumber(first, thirt);
             Console.WriteLine("{0} is hight of them", first, second);
         }
     }
