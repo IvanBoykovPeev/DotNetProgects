@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{743D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triangle", "Triangle\Triangle.csproj", "{A23A5292-74D1-4AFF-A4A4-8908E9273D18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureConverter", "TemperatureConverter\TemperatureConverter.csproj", "{CCF8C712-2136-4C77-A81D-CB98258E6738}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{A23A5292-74D1-4AFF-A4A4-8908E9273D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A23A5292-74D1-4AFF-A4A4-8908E9273D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A23A5292-74D1-4AFF-A4A4-8908E9273D18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCF8C712-2136-4C77-A81D-CB98258E6738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF8C712-2136-4C77-A81D-CB98258E6738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF8C712-2136-4C77-A81D-CB98258E6738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF8C712-2136-4C77-A81D-CB98258E6738}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,5 +63,6 @@ Global
 		{81274762-676F-40EA-9CD8-E0D54CAA17D8} = {D17B6637-03F8-46C1-8447-E0E346DC8847}
 		{743D3D38-58C7-4E72-8577-41C528749FFB} = {A19FD800-A6AB-4D10-B3DE-F29E7FEBB6C2}
 		{A23A5292-74D1-4AFF-A4A4-8908E9273D18} = {743D3D38-58C7-4E72-8577-41C528749FFB}
+		{CCF8C712-2136-4C77-A81D-CB98258E6738} = {743D3D38-58C7-4E72-8577-41C528749FFB}
 	EndGlobalSection
 EndGlobal
