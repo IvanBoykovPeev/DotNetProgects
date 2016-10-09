@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triangle", "Triangle\Triang
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureConverter", "TemperatureConverter\TemperatureConverter.csproj", "{CCF8C712-2136-4C77-A81D-CB98258E6738}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9.Practice", "9.Practice", "{62281EBE-7A3E-495C-90B0-4170780B0EF1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9_Practice", "9_Practice", "{62281EBE-7A3E-495C-90B0-4170780B0EF1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserName", "UserName\UserName.csproj", "{40A9DF9C-98A4-4350-8169-FF572190DF76}"
 EndProject

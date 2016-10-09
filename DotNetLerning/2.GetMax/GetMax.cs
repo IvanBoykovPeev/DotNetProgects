@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2.GetMax
 {
-    class Program
+    class GetMax
     {
         static int GetMax(int firstNumber, int secondNumber)
         {
