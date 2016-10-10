@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Months", "Months\Months.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice-GetMax-9-2", "2.GetMax\Practice-GetMax-9-2.csproj", "{18C2F2E6-4A41-461E-B9C6-636FB50C6FF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataValidation", "DataValidation\DataValidation.csproj", "{CCCA45E0-C87A-4E7F-A8D6-45EE0187A986}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{18C2F2E6-4A41-461E-B9C6-636FB50C6FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18C2F2E6-4A41-461E-B9C6-636FB50C6FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18C2F2E6-4A41-461E-B9C6-636FB50C6FF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCCA45E0-C87A-4E7F-A8D6-45EE0187A986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCCA45E0-C87A-4E7F-A8D6-45EE0187A986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCCA45E0-C87A-4E7F-A8D6-45EE0187A986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCCA45E0-C87A-4E7F-A8D6-45EE0187A986}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,5 +87,6 @@ Global
 		{62281EBE-7A3E-495C-90B0-4170780B0EF1} = {A19FD800-A6AB-4D10-B3DE-F29E7FEBB6C2}
 		{F8AEA1F6-6670-4AB3-852F-1AA2F185B3DD} = {743D3D38-58C7-4E72-8577-41C528749FFB}
 		{18C2F2E6-4A41-461E-B9C6-636FB50C6FF5} = {62281EBE-7A3E-495C-90B0-4170780B0EF1}
+		{CCCA45E0-C87A-4E7F-A8D6-45EE0187A986} = {743D3D38-58C7-4E72-8577-41C528749FFB}
 	EndGlobalSection
 EndGlobal
