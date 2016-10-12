@@ -19,7 +19,7 @@ namespace ConnectWithDataBase
             //con.StateChange += new StateChangeEventHandler(ConnStateChanche);
             //con.InfoMessage += new SqlInfoMessageEventHandler(InfoMessage);
 
-            string qurryString = "SELECT Name from dbo.Products";
+            string qurryString = "SELECT Name FROM dbo.Products";
 
             
             using (con)
