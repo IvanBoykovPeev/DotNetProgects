@@ -16,10 +16,10 @@ namespace ConnectWithDataBase
         {
             //Create the conection
             SqlConnection con = new SqlConnection(CONNECTION_STRING);
-            //con.StateChange += new StateChangeEventHandler(ConnStateChanche);
-            //con.InfoMessage += new SqlInfoMessageEventHandler(InfoMessage);
+            con.StateChange += new StateChangeEventHandler(ConnStateChanche);
+            con.InfoMessage += new SqlInfoMessageEventHandler(InfoMessage);
 
-            string qurryString = "SELECT Name FROM dbo.Products";
+            string qurryString = "SELECT Name, Price FROM dbo.Products";
 
             
             using (con)
@@ -35,32 +35,33 @@ namespace ConnectWithDataBase
                     SqlDataReader reader = command.ExecuteReader();
                     while (reader.Read())
                     {
-                        Console.WriteLine(reader[0]);
+                        Console.WriteLine("{0} - {1}", reader[0], reader[1]);
                     }
-
+                    reader.Close();
                     Console.WriteLine("--------------------------");
-                    con.Close();
+                    
                 }
                 catch (Exception ex)
                 {
 
                     Console.WriteLine(ex.Message);
                 }
+                con.Close();
             }            
         }
 
-        //private static void InfoMessage(object sender, SqlInfoMessageEventArgs e)
-        //{
-        //    Console.WriteLine("--------------------------------------");
-        //    Console.WriteLine(e.Errors);
-        //    Console.WriteLine(e.Message);
-        //    Console.WriteLine(e.Source);
-        //}
+        private static void InfoMessage(object sender, SqlInfoMessageEventArgs e)
+        {
+            Console.WriteLine("--------------------------------------");
+            Console.WriteLine(e.Errors);
+            Console.WriteLine(e.Message);
+            Console.WriteLine(e.Source);
+        }
 
-        //private static void ConnStateChanche(object sender, StateChangeEventArgs e)
-        //{
-        //    //Console.WriteLine(e.OriginalState);
-        //    Console.WriteLine(e.CurrentState);
-        //}
+        private static void ConnStateChanche(object sender, StateChangeEventArgs e)
+        {
+            //Console.WriteLine(e.OriginalState);
+            Console.WriteLine(e.CurrentState);
+        }
     }
 }
