@@ -19,7 +19,7 @@ namespace ConnectWithDataBase
             con.StateChange += new StateChangeEventHandler(ConnStateChanche);
             con.InfoMessage += new SqlInfoMessageEventHandler(InfoMessage);
 
-            string qurryString = "SELECT Name, Price FROM dbo.Products";
+            string qurryString = "SELECT Name, Price, Description FROM dbo.Products";
 
             
             using (con)
@@ -35,7 +35,7 @@ namespace ConnectWithDataBase
                     SqlDataReader reader = command.ExecuteReader();
                     while (reader.Read())
                     {
-                        Console.WriteLine("{0} - {1}", reader[0], reader[1]);
+                        Console.WriteLine("{0} - {1} - {2}", reader[0], reader[1], reader[2]);
                     }
                     reader.Close();
                     Console.WriteLine("--------------------------");
