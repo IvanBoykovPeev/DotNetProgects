@@ -16,8 +16,8 @@ namespace ConnectWithDataBase
         {
             //Create the conection
             SqlConnection con = new SqlConnection(CONNECTION_STRING);
-            con.StateChange += new StateChangeEventHandler(ConnStateChanche);
-            con.InfoMessage += new SqlInfoMessageEventHandler(InfoMessage);
+            //con.StateChange += new StateChangeEventHandler(ConnStateChanche);
+            //con.InfoMessage += new SqlInfoMessageEventHandler(InfoMessage);
 
             string qurryString = "SELECT Name from dbo.Products";
 
@@ -49,18 +49,18 @@ namespace ConnectWithDataBase
             }            
         }
 
-        private static void InfoMessage(object sender, SqlInfoMessageEventArgs e)
-        {
-            Console.WriteLine("--------------------------------------");
-            Console.WriteLine(e.Errors);
-            Console.WriteLine(e.Message);
-            Console.WriteLine(e.Source);
-        }
+        //private static void InfoMessage(object sender, SqlInfoMessageEventArgs e)
+        //{
+        //    Console.WriteLine("--------------------------------------");
+        //    Console.WriteLine(e.Errors);
+        //    Console.WriteLine(e.Message);
+        //    Console.WriteLine(e.Source);
+        //}
 
-        private static void ConnStateChanche(object sender, StateChangeEventArgs e)
-        {
-            //Console.WriteLine(e.OriginalState);
-            Console.WriteLine(e.CurrentState);
-        }
+        //private static void ConnStateChanche(object sender, StateChangeEventArgs e)
+        //{
+        //    //Console.WriteLine(e.OriginalState);
+        //    Console.WriteLine(e.CurrentState);
+        //}
     }
 }
