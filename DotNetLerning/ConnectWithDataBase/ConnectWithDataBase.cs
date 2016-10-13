@@ -16,8 +16,6 @@ namespace ConnectWithDataBase
         {
             //Create the conection
             SqlConnection con = new SqlConnection(CONNECTION_STRING);
-            con.StateChange += new StateChangeEventHandler(ConnStateChanche);
-            con.InfoMessage += new SqlInfoMessageEventHandler(InfoMessage);
 
             string qurryString = "SELECT Name, Price, Description FROM dbo.Products";
 
@@ -25,21 +23,18 @@ namespace ConnectWithDataBase
             using (con)
             {
                 SqlCommand command = new SqlCommand(qurryString, con);
-
+                //Open the conection
+                con.Open();                
                 try
                 {
-                    //Open the conection
-                    con.Open();
                     Console.WriteLine("--------------------------");
-
                     SqlDataReader reader = command.ExecuteReader();
                     while (reader.Read())
                     {
                         Console.WriteLine("{0} - {1} - {2}", reader[0], reader[1], reader[2]);
                     }
                     reader.Close();
-                    Console.WriteLine("--------------------------");
-                    
+                    Console.WriteLine("--------------------------");                    
                 }
                 catch (Exception ex)
                 {
@@ -51,20 +46,6 @@ namespace ConnectWithDataBase
                     con.Close();
                 }                
             }            
-        }
-
-        private static void InfoMessage(object sender, SqlInfoMessageEventArgs e)
-        {
-            Console.WriteLine("--------------------------------------");
-            Console.WriteLine(e.Errors);
-            Console.WriteLine(e.Message);
-            Console.WriteLine(e.Source);
-        }
-
-        private static void ConnStateChanche(object sender, StateChangeEventArgs e)
-        {
-            //Console.WriteLine(e.OriginalState);
-            Console.WriteLine(e.CurrentState);
         }
     }
 }
