@@ -43,10 +43,13 @@ namespace ConnectWithDataBase
                 }
                 catch (Exception ex)
                 {
-
                     Console.WriteLine(ex.Message);
                 }
-                con.Close();
+                finally
+                {
+                    //Close the colection
+                    con.Close();
+                }                
             }            
         }
 
