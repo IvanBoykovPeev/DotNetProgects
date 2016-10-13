@@ -19,7 +19,6 @@ namespace TestTransactions
             try
             {
                 SqlTransaction trans = dbCon.BeginTransaction(IsolationLevel.ReadCommitted);
-                string qurryString = "SELECT Name, Price, Description FROM dbo.Products";
                 Console.WriteLine("Transaction started.");
 
                 SqlCommand cmd = dbCon.CreateCommand();
