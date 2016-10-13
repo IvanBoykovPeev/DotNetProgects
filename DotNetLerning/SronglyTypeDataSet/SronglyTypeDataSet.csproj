@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SportStoreDataSet.cs">
+      <DependentUpon>SportStoreDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SportStoreDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
