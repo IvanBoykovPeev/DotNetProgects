@@ -27,15 +27,19 @@ namespace TestTransactions
                 try
                 {
                     cmd.CommandText = "INSERT INTO Products(Name, Description, Category, Price)" + "VALUES('New Record', 'New Description', 'New Category', '20.00')";
-                    cmd.ExecuteNonQuery();
+                    int affectedRows = (int)cmd.ExecuteNonQuery();
                     Console.WriteLine("Inserted a new record.");
 
                     cmd.CommandText = "INSERT INTO Products(Name, Description, Category, Price)" + "VALUES('New Record1', 'New Description1', 'New Category1', '20.00')";
-                    cmd.ExecuteNonQuery();
+                    affectedRows += (int)cmd.ExecuteNonQuery();
                     Console.WriteLine("Inserted a new record.");
+
+                    Console.WriteLine("Affected rows {0}.", affectedRows);
 
                     trans.Commit();
                     Console.WriteLine("Transaction comitted.");
+
+                    
 
                     Console.WriteLine("------------------------------");
                     cmd.CommandText = "SELECT Name, Price, Description FROM dbo.Products";
