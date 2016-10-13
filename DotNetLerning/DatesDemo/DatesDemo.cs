@@ -16,12 +16,32 @@ namespace DatesDemo
         {
             DatesDemo demo = new DatesDemo();
             demo.ConnectToSqlServer();
-
-
+            demo.DropMessageTable();
+            demo.CreateMessageTable();
             demo.DisconnectFromSqlServer();
         }
 
-        
+        private void DropMessageTable()
+        {
+            SqlCommand cmdDropMessageTable = new SqlCommand(
+                @"IF OBJECT_ID('Message') IS NOT NULL
+                  DROP TABLE Message", 
+                mDbCon);
+            cmdDropMessageTable.ExecuteNonQuery();
+            Console.WriteLine("Table Messages deleted (if existed).");
+        }
+
+        private void CreateMessageTable()
+        {
+            SqlCommand cmdCreateMsgTable = new SqlCommand(
+                @"CREATE TABLE Message
+                (
+                    MsgId int identity not null primary key
+                )",
+                mDbCon);
+            cmdCreateMsgTable.ExecuteNonQuery();
+            Console.WriteLine("Created table Messages.");
+        }
 
         private void ConnectToSqlServer()
         {
