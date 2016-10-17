@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectWithDataBase", "Conn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTransactions", "TestTransactions\TestTransactions.csproj", "{CFBDDFD9-8C72-4F52-B877-9DB43A439421}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAdapterTest", "DataAdapterTest\DataAdapterTest.csproj", "{CA3CEA67-6FA4-4EB7-B209-DD3FF1092EA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,10 @@ Global
 		{CFBDDFD9-8C72-4F52-B877-9DB43A439421}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFBDDFD9-8C72-4F52-B877-9DB43A439421}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFBDDFD9-8C72-4F52-B877-9DB43A439421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA3CEA67-6FA4-4EB7-B209-DD3FF1092EA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA3CEA67-6FA4-4EB7-B209-DD3FF1092EA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA3CEA67-6FA4-4EB7-B209-DD3FF1092EA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA3CEA67-6FA4-4EB7-B209-DD3FF1092EA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -111,5 +117,6 @@ Global
 		{04116DB7-D114-40C7-9B9D-E2CAA22BD0DB} = {743D3D38-58C7-4E72-8577-41C528749FFB}
 		{16713DEA-88CB-4D9A-8634-5168AD2F8ED7} = {D93C59B2-1AF9-4E20-BD99-5B368CDB64B7}
 		{CFBDDFD9-8C72-4F52-B877-9DB43A439421} = {D93C59B2-1AF9-4E20-BD99-5B368CDB64B7}
+		{CA3CEA67-6FA4-4EB7-B209-DD3FF1092EA1} = {D93C59B2-1AF9-4E20-BD99-5B368CDB64B7}
 	EndGlobalSection
 EndGlobal
