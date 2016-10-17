@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "DotNetLerning\Hello.csproj", "{01B072FC-90F0-4CF9-B78F-C295D1D20047}"
 EndProject
@@ -44,6 +44,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatesDemo", "DatesDemo\DatesDemo.csproj", "{EA948D00-1A82-4472-AE21-48FD9223CA24}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SronglyTypeDataSet", "SronglyTypeDataSet\SronglyTypeDataSet.csproj", "{FC5ED08C-ADCF-4865-811E-781AECC19E65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAdapterTest", "DataAdapterTest\DataAdapterTest.csproj", "{CA3CEA67-6FA4-4EB7-B209-DD3FF1092EA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -157,6 +159,14 @@ Global
 		{FC5ED08C-ADCF-4865-811E-781AECC19E65}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FC5ED08C-ADCF-4865-811E-781AECC19E65}.Release|x86.ActiveCfg = Release|Any CPU
 		{FC5ED08C-ADCF-4865-811E-781AECC19E65}.Release|x86.Build.0 = Release|Any CPU
+		{CA3CEA67-6FA4-4EB7-B209-DD3FF1092EA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA3CEA67-6FA4-4EB7-B209-DD3FF1092EA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA3CEA67-6FA4-4EB7-B209-DD3FF1092EA1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CA3CEA67-6FA4-4EB7-B209-DD3FF1092EA1}.Debug|x86.Build.0 = Debug|Any CPU
+		{CA3CEA67-6FA4-4EB7-B209-DD3FF1092EA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA3CEA67-6FA4-4EB7-B209-DD3FF1092EA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA3CEA67-6FA4-4EB7-B209-DD3FF1092EA1}.Release|x86.ActiveCfg = Release|Any CPU
+		{CA3CEA67-6FA4-4EB7-B209-DD3FF1092EA1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -179,5 +189,6 @@ Global
 		{CFBDDFD9-8C72-4F52-B877-9DB43A439421} = {D93C59B2-1AF9-4E20-BD99-5B368CDB64B7}
 		{EA948D00-1A82-4472-AE21-48FD9223CA24} = {D93C59B2-1AF9-4E20-BD99-5B368CDB64B7}
 		{FC5ED08C-ADCF-4865-811E-781AECC19E65} = {D93C59B2-1AF9-4E20-BD99-5B368CDB64B7}
+		{CA3CEA67-6FA4-4EB7-B209-DD3FF1092EA1} = {D93C59B2-1AF9-4E20-BD99-5B368CDB64B7}
 	EndGlobalSection
 EndGlobal
