@@ -1,4 +1,6 @@
-﻿namespace SronglyTypeDataSet
+﻿using System.Data.SqlClient;
+
+namespace SronglyTypeDataSet
 {
     partial class Form1
     {
@@ -40,6 +42,7 @@
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sportStoreDataSet = new SronglyTypeDataSet.SportStoreDataSet();
             this.productsTableAdapter = new SronglyTypeDataSet.SportStoreDataSetTableAdapters.ProductsTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sportStoreDataSet)).BeginInit();
@@ -120,11 +123,22 @@
             // 
             this.productsTableAdapter.ClearBeforeFill = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(13, 492);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Commit";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(908, 536);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -148,6 +162,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn imageDataDataGridViewImageColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn imageMimeTypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button1;
     }
 }
 

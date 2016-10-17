@@ -12,6 +12,7 @@ namespace SronglyTypeDataSet
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -27,6 +28,16 @@ namespace SronglyTypeDataSet
             // TODO: This line of code loads data into the 'sportStoreDataSet.Products' table. You can move, or remove it, as needed.
             this.productsTableAdapter.Fill(this.sportStoreDataSet.Products);
 
+        }
+
+        private void CommitButon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            productsTableAdapter.Update(sportStoreDataSet);
         }
     }
 }
