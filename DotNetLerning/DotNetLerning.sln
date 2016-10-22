@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleBindigWithTable", "Si
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingComtrolToObject", "SimpleBindigWithVS\BindingComtrolToObject.csproj", "{05ADBBC3-0909-40E2-BB29-C6173DC40467}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorForm", "CalculatorForm\CalculatorForm.csproj", "{8EBD5777-57DA-415A-AD46-F9F5C4FBE9E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -209,6 +211,14 @@ Global
 		{05ADBBC3-0909-40E2-BB29-C6173DC40467}.Release|Any CPU.Build.0 = Release|Any CPU
 		{05ADBBC3-0909-40E2-BB29-C6173DC40467}.Release|x86.ActiveCfg = Release|Any CPU
 		{05ADBBC3-0909-40E2-BB29-C6173DC40467}.Release|x86.Build.0 = Release|Any CPU
+		{8EBD5777-57DA-415A-AD46-F9F5C4FBE9E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EBD5777-57DA-415A-AD46-F9F5C4FBE9E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EBD5777-57DA-415A-AD46-F9F5C4FBE9E7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8EBD5777-57DA-415A-AD46-F9F5C4FBE9E7}.Debug|x86.Build.0 = Debug|Any CPU
+		{8EBD5777-57DA-415A-AD46-F9F5C4FBE9E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EBD5777-57DA-415A-AD46-F9F5C4FBE9E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EBD5777-57DA-415A-AD46-F9F5C4FBE9E7}.Release|x86.ActiveCfg = Release|Any CPU
+		{8EBD5777-57DA-415A-AD46-F9F5C4FBE9E7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -236,5 +246,6 @@ Global
 		{F902AF2F-CBBF-434C-8DC4-F08FC916D859} = {2F70A1AE-7AA8-46BB-9475-11100C452EBA}
 		{E41B9003-2DB1-45D3-BEEA-FCD065464479} = {2F70A1AE-7AA8-46BB-9475-11100C452EBA}
 		{05ADBBC3-0909-40E2-BB29-C6173DC40467} = {2F70A1AE-7AA8-46BB-9475-11100C452EBA}
+		{8EBD5777-57DA-415A-AD46-F9F5C4FBE9E7} = {2F70A1AE-7AA8-46BB-9475-11100C452EBA}
 	EndGlobalSection
 EndGlobal
