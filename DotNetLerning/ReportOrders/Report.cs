@@ -1,0 +1,66 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data.SqlClient;
+
+namespace ReportOrders
+{
+    class Report
+    {
+        static void Main()
+        {
+            SqlConnection dataConnection = new SqlConnection();
+            try
+            {
+                dataConnection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;
+                    AttachDbFilename=C:\Users\Ivan\Desktop\DotNetProgects\DotNetLerning\DisplayProducts\Northwind.mdf;
+                    Integrated Security=True;Connect Timeout=30";
+                dataConnection.Open();
+                Console.WriteLine("Please enter a customer ID (5 characters): ");
+                string custumerId = Console.ReadLine();
+
+                SqlCommand dataCommand = new SqlCommand();
+                dataCommand.Connection = dataConnection;
+                dataCommand.CommandText = "SELECT OrderID, OrderDate, " +
+                    "ShippedDate, ShipName, ShipAddress, ShipCity, " +
+                    "ShipCountry ";
+                dataCommand.CommandText += "FROM Orders WHERE CustomerID='" +
+                    custumerId + "'";
+                Console.WriteLine("About to execute: {0}\n\n", dataCommand.CommandText);
+
+                SqlDataReader dataReader = dataCommand.ExecuteReader();
+                while (dataReader.Read())
+                {
+                    int orderId = dataReader.GetInt32(0);
+                    if (dataReader.IsDBNull(2))
+                    {
+                        Console.WriteLine("Order {0} not yet shipped\n\n", orderId);
+                    }
+                    else
+                    {
+                        DateTime orderDate = dataReader.GetDateTime(1);
+                        DateTime shipDate = dataReader.GetDateTime(2);
+                        string shipName = dataReader.GetString(3);
+                        string shipAddress = dataReader.GetString(4);
+                        string shipCity = dataReader.GetString(5);
+                        string shipCountry = dataReader.GetString(6);
+                        Console.WriteLine("Order {0}\nPlaced {1}\nShipped {2}\n" + 
+                        "To Address {3}\n{4}\n{5}\n{6}\n\n", orderId, orderDate,
+                         shipDate, shipName, shipAddress, shipCity, shipCountry);
+                    }
+                }
+                dataReader.Close();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Error accessing the database: " + e.Message);
+            }
+            finally
+            {
+                dataConnection.Close();
+            }
+        }
+    }
+}
