@@ -45,7 +45,8 @@
             this.ImageListToolBar = new System.Windows.Forms.ImageList(this.components);
             this.StatusBarMainForm = new System.Windows.Forms.StatusStrip();
             this.StatusBarInfo = new System.Windows.Forms.ToolStripStatusLabel();
-            this.ToolStripStatusLabelLine = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabelInfo = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabelLine = new System.Windows.Forms.ToolStripStatusLabel();
             this.OpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.MenuMainForm.SuspendLayout();
             this.ToolBarMainForm.SuspendLayout();
@@ -78,33 +79,37 @@
             // MenuItemFileNew
             // 
             this.MenuItemFileNew.Name = "MenuItemFileNew";
-            this.MenuItemFileNew.Size = new System.Drawing.Size(103, 22);
+            this.MenuItemFileNew.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.MenuItemFileNew.Size = new System.Drawing.Size(146, 22);
             this.MenuItemFileNew.Text = "New";
             this.MenuItemFileNew.Click += new System.EventHandler(this.MenuItemFileNew_Click);
             // 
             // MenuItemFileOpen
             // 
             this.MenuItemFileOpen.Name = "MenuItemFileOpen";
-            this.MenuItemFileOpen.Size = new System.Drawing.Size(103, 22);
+            this.MenuItemFileOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.MenuItemFileOpen.Size = new System.Drawing.Size(146, 22);
             this.MenuItemFileOpen.Text = "Open";
             this.MenuItemFileOpen.Click += new System.EventHandler(this.MenuItemFileOpen_Click);
             // 
             // MenuItemFileSave
             // 
             this.MenuItemFileSave.Name = "MenuItemFileSave";
-            this.MenuItemFileSave.Size = new System.Drawing.Size(103, 22);
+            this.MenuItemFileSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.MenuItemFileSave.Size = new System.Drawing.Size(146, 22);
             this.MenuItemFileSave.Text = "Save";
             this.MenuItemFileSave.Click += new System.EventHandler(this.MenuItemFileSave_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(100, 6);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(143, 6);
             // 
             // MenuItemFileExit
             // 
             this.MenuItemFileExit.Name = "MenuItemFileExit";
-            this.MenuItemFileExit.Size = new System.Drawing.Size(103, 22);
+            this.MenuItemFileExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
+            this.MenuItemFileExit.Size = new System.Drawing.Size(146, 22);
             this.MenuItemFileExit.Text = "Exit";
             this.MenuItemFileExit.Click += new System.EventHandler(this.MenuItemFileExit_Click);
             // 
@@ -133,7 +138,7 @@
             this.ToolStripButtonNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ToolStripButtonNew.Name = "ToolStripButtonNew";
             this.ToolStripButtonNew.Size = new System.Drawing.Size(23, 22);
-            this.ToolStripButtonNew.Text = "toolStripButton1";
+            this.ToolStripButtonNew.Text = "New File";
             this.ToolStripButtonNew.Click += new System.EventHandler(this.ToolStripButtonNew_Click);
             // 
             // ToolStripButtonOpen
@@ -143,7 +148,7 @@
             this.ToolStripButtonOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ToolStripButtonOpen.Name = "ToolStripButtonOpen";
             this.ToolStripButtonOpen.Size = new System.Drawing.Size(23, 22);
-            this.ToolStripButtonOpen.Text = "toolStripButton2";
+            this.ToolStripButtonOpen.Text = "Open File";
             this.ToolStripButtonOpen.Click += new System.EventHandler(this.ToolStripButtonOpen_Click);
             // 
             // ToolStripButtonSave
@@ -153,7 +158,7 @@
             this.ToolStripButtonSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ToolStripButtonSave.Name = "ToolStripButtonSave";
             this.ToolStripButtonSave.Size = new System.Drawing.Size(23, 22);
-            this.ToolStripButtonSave.Text = "toolStripButton3";
+            this.ToolStripButtonSave.Text = "Save File";
             this.ToolStripButtonSave.Click += new System.EventHandler(this.ToolStripButtonSave_Click);
             // 
             // ImageListToolBar
@@ -166,9 +171,13 @@
             // 
             // StatusBarMainForm
             // 
+            this.StatusBarMainForm.AccessibleRole = System.Windows.Forms.AccessibleRole.StatusBar;
+            this.StatusBarMainForm.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.StatusBarMainForm.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.StatusBarInfo,
-            this.ToolStripStatusLabelLine});
+            this.toolStripStatusLabelInfo,
+            this.toolStripStatusLabelLine});
+            this.StatusBarMainForm.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.StatusBarMainForm.Location = new System.Drawing.Point(0, 449);
             this.StatusBarMainForm.Name = "StatusBarMainForm";
             this.StatusBarMainForm.ShowItemToolTips = true;
@@ -178,15 +187,24 @@
             // 
             // StatusBarInfo
             // 
+            this.StatusBarInfo.AutoSize = false;
+            this.StatusBarInfo.BackColor = System.Drawing.Color.Ivory;
             this.StatusBarInfo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.StatusBarInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.StatusBarInfo.Name = "StatusBarInfo";
             this.StatusBarInfo.Size = new System.Drawing.Size(0, 17);
             // 
-            // ToolStripStatusLabelLine
+            // toolStripStatusLabelInfo
             // 
-            this.ToolStripStatusLabelLine.Name = "ToolStripStatusLabelLine";
-            this.ToolStripStatusLabelLine.Size = new System.Drawing.Size(0, 17);
+            this.toolStripStatusLabelInfo.Name = "toolStripStatusLabelInfo";
+            this.toolStripStatusLabelInfo.Size = new System.Drawing.Size(39, 17);
+            this.toolStripStatusLabelInfo.Text = "Ready";
+            // 
+            // toolStripStatusLabelLine
+            // 
+            this.toolStripStatusLabelLine.Name = "toolStripStatusLabelLine";
+            this.toolStripStatusLabelLine.Size = new System.Drawing.Size(29, 17);
+            this.toolStripStatusLabelLine.Text = "Line";
             // 
             // OpenFileDialog
             // 
@@ -205,6 +223,7 @@
             this.MainMenuStrip = this.MenuMainForm;
             this.Name = "MainForm";
             this.Text = "Text Editor Demo";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.MenuMainForm.ResumeLayout(false);
             this.MenuMainForm.PerformLayout();
             this.ToolBarMainForm.ResumeLayout(false);
@@ -228,13 +247,14 @@
         private System.Windows.Forms.ToolStripButton ToolStripButtonNew;
         private System.Windows.Forms.ToolStripButton ToolStripButtonOpen;
         private System.Windows.Forms.ToolStripButton ToolStripButtonSave;
-        private System.Windows.Forms.ToolStripStatusLabel StatusBarInfo;
-        private System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabelLine;
         private System.Windows.Forms.ToolStripMenuItem MenuItemFileNew;
         private System.Windows.Forms.ToolStripMenuItem MenuItemFileOpen;
         private System.Windows.Forms.ToolStripMenuItem MenuItemFileSave;
         private System.Windows.Forms.ToolStripSeparator exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MenuItemFileExit;
+        private System.Windows.Forms.ToolStripStatusLabel StatusBarInfo;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelInfo;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelLine;
     }
 }
 

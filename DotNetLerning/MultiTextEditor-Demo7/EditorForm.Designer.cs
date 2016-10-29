@@ -40,6 +40,7 @@
             this.EditorRichTextBox.Size = new System.Drawing.Size(284, 261);
             this.EditorRichTextBox.TabIndex = 0;
             this.EditorRichTextBox.Text = "";
+            this.EditorRichTextBox.SelectionChanged += new System.EventHandler(this.EditorRichTextBox_SelectionChanged);
             // 
             // SaveFileDialog
             // 
@@ -53,6 +54,8 @@
             this.Controls.Add(this.EditorRichTextBox);
             this.Name = "EditorForm";
             this.Text = "EditorForm";
+            this.Activated += new System.EventHandler(this.EditorForm_Activated);
+            this.Leave += new System.EventHandler(this.EditorForm_Closed);
             this.ResumeLayout(false);
 
         }
