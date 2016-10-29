@@ -75,6 +75,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstStepDemo", "FirstStepD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileOpenDialog-Demo", "ФилеОпенДиалог-Демо\FileOpenDialog-Demo.csproj", "{6252C917-6284-4212-A78A-FBE164FD35E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiTextEditor-Demo7", "MultiTextEditor-Demo7\MultiTextEditor-Demo7.csproj", "{EE642D06-F919-448C-BE63-4252B73E2FD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -291,6 +293,14 @@ Global
 		{6252C917-6284-4212-A78A-FBE164FD35E6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6252C917-6284-4212-A78A-FBE164FD35E6}.Release|x86.ActiveCfg = Release|Any CPU
 		{6252C917-6284-4212-A78A-FBE164FD35E6}.Release|x86.Build.0 = Release|Any CPU
+		{EE642D06-F919-448C-BE63-4252B73E2FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE642D06-F919-448C-BE63-4252B73E2FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE642D06-F919-448C-BE63-4252B73E2FD3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EE642D06-F919-448C-BE63-4252B73E2FD3}.Debug|x86.Build.0 = Debug|Any CPU
+		{EE642D06-F919-448C-BE63-4252B73E2FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE642D06-F919-448C-BE63-4252B73E2FD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE642D06-F919-448C-BE63-4252B73E2FD3}.Release|x86.ActiveCfg = Release|Any CPU
+		{EE642D06-F919-448C-BE63-4252B73E2FD3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -326,5 +336,6 @@ Global
 		{3D3FE044-7170-4FA3-B4FA-219F3DB88980} = {2F70A1AE-7AA8-46BB-9475-11100C452EBA}
 		{5CD61BC8-E973-4F5E-8C50-6FF63D45BED9} = {22F9DF38-02EC-447B-8325-D08668659855}
 		{6252C917-6284-4212-A78A-FBE164FD35E6} = {2F70A1AE-7AA8-46BB-9475-11100C452EBA}
+		{EE642D06-F919-448C-BE63-4252B73E2FD3} = {2F70A1AE-7AA8-46BB-9475-11100C452EBA}
 	EndGlobalSection
 EndGlobal
