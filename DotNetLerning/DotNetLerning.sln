@@ -97,6 +97,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumber", "PrimeNumber\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateFactorial", "CalculateFactorial\CalculateFactorial.csproj", "{1FEAF3F6-53A4-4841-8479-130AE75EE6EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateFactorialWithDoWhileLoop", "CalculateFactorialWithDoWhileLoop\CalculateFactorialWithDoWhileLoop.csproj", "{564F5E0B-C61B-4DDD-B7BA-43C2115D4922}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -369,6 +371,14 @@ Global
 		{1FEAF3F6-53A4-4841-8479-130AE75EE6EE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1FEAF3F6-53A4-4841-8479-130AE75EE6EE}.Release|x86.ActiveCfg = Release|Any CPU
 		{1FEAF3F6-53A4-4841-8479-130AE75EE6EE}.Release|x86.Build.0 = Release|Any CPU
+		{564F5E0B-C61B-4DDD-B7BA-43C2115D4922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564F5E0B-C61B-4DDD-B7BA-43C2115D4922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564F5E0B-C61B-4DDD-B7BA-43C2115D4922}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{564F5E0B-C61B-4DDD-B7BA-43C2115D4922}.Debug|x86.Build.0 = Debug|Any CPU
+		{564F5E0B-C61B-4DDD-B7BA-43C2115D4922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564F5E0B-C61B-4DDD-B7BA-43C2115D4922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{564F5E0B-C61B-4DDD-B7BA-43C2115D4922}.Release|x86.ActiveCfg = Release|Any CPU
+		{564F5E0B-C61B-4DDD-B7BA-43C2115D4922}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -413,5 +423,6 @@ Global
 		{9D7DDE63-2675-425F-9AD6-148374BDC1E5} = {5BA53ECD-41DC-4756-B073-D8A948DDE2C2}
 		{14B440C2-D642-4288-8BFC-FE233B0F3547} = {585A5275-0582-4F6E-A836-039C70DED3DC}
 		{1FEAF3F6-53A4-4841-8479-130AE75EE6EE} = {585A5275-0582-4F6E-A836-039C70DED3DC}
+		{564F5E0B-C61B-4DDD-B7BA-43C2115D4922} = {585A5275-0582-4F6E-A836-039C70DED3DC}
 	EndGlobalSection
 EndGlobal
