@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CalculateFactorial
 {
-    class Program
+    class CalculateFactorial
     {
         static void Main()
         {
