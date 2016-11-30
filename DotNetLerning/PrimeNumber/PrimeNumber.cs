@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrimeNumber
 {
-    class Program
+    class PrimeNumber
     {
         static void Main()
         {
