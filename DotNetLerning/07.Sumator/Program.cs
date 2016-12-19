@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ФилеОпенДиалог_Демо
+namespace _07.Sumator
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace ФилеОпенДиалог_Демо
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new FormCalculate());
         }
     }
 }
